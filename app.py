@@ -1,14 +1,12 @@
-from classes import Estudiante
+from classes import Student
 from dotenv import load_dotenv
 
-# 
-
 def main():
-    estudiante = Estudiante("Mario","AS","33563254")
-    #estudiante.save()
-    #estudiante = Estudiante("Mumuchumu","Doblas","31487539")
-    estudiante.apellido = "Pérez"
-    estudiante.update_student()
+    student = Student("Leo","Dona","33563254")
+    student.save()
+    #student = Student("Mumuchumu","Doblas","31487539")
+    student.last_name = "Messi"
+    student.update_student()
     
 if __name__ == "__main__":
     load_dotenv()
